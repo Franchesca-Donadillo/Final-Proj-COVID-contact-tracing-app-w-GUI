@@ -16,12 +16,29 @@ def win1():
         start_btn.destroy() 
         btn1 = tk.Button (title, text = "Submit", width=8, height=2, activebackground= "cyan" ) 
         btn1.place (x=300, y=620)
+        
+        # name info
         lbl_name = tk.Label (title, text = "Name")
         lbl_name.place(x=10, y=55)
+        entry_name = tk.Entry (title, width="30")
+        entry_name.place(x=70,y=55)
+        
+        # email info
         lbl_email = tk.Label (title, text = "Email")
-        lbl_email.place(x=10, y=85)
+        lbl_email.place(x=10, y=75)
+        
+        # birthday info
+        lbl_birt = tk.Label (title, text = "Birthday")
+        lbl_birt.place(x=10, y=95)
+        
+        # age info
+        lbl_age = tk.Label (title, text = "Age")
+        lbl_age.place(x=10, y=115)
+
+        # address info
         lbl_add = tk.Label (title, text = "Address")
-        lbl_add.place(x=10, y=105)
+        lbl_add.place(x=10, y=135)
+
 
     start_btn = tk.Button (title, text = "Start", width=15, height=4, activebackground= "cyan", command=win2 ) 
     start_btn.place (x=280, y=480)
