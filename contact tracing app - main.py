@@ -10,6 +10,10 @@ title = tk.Tk()
 # create main window
 title.title("COVID CONTACT TRACING")
 title.geometry("500x500")
+title = tk.Canvas(title, width=500, height=500)
+title.pack()
+background = tk.PhotoImage(file="C:\\Users\\63920\\Downloads\\covid\\covid2.png")
+title.create_image(0,0, image= background)
 
 def win1():
     def win2():
@@ -17,6 +21,10 @@ def win1():
         btn1 = tk.Button (title, text = "Submit", width=8, height=2, activebackground= "cyan" ) 
         btn1.place (x=210, y=450)
         
+        # title
+        lbl_name = tk.Label (title, text = "CONTACT INFORMATION", font="arial")
+        lbl_name.place(x=125)
+
         # name info
         lbl_name = tk.Label (title, text = "Name")
         lbl_name.place(x=10, y=55)
@@ -70,7 +78,7 @@ def win1():
         chk_sym.place(x=170,y=310)
         chk_sym = tk.Checkbutton(title, text="No", activebackground="green")
         chk_sym.place(x=215,y=310)
-
+    
     start_btn = tk.Button (title, text = "Start", width=15, height=4, activebackground= "cyan", command=win2 ) 
     start_btn.place (x=188, y=310)
 
