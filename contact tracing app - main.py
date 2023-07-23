@@ -37,11 +37,15 @@ def win1():
         
         # age info
         lbl_age = tk.Label (title, text = "Age")
-        lbl_age.place(x=10, y=135)
+        lbl_age.place(x=10, y=145)
+        entry_age = tk.Entry (title, width="30")
+        entry_age.place(x=70,y=145)
 
         # address info
         lbl_add = tk.Label (title, text = "Address")
-        lbl_add.place(x=10, y=155)
+        lbl_add.place(x=10, y=175)
+        entry_add = tk.Entry (title, width="30")
+        entry_add.place(x=70,y=175)
 
 
     start_btn = tk.Button (title, text = "Start", width=15, height=4, activebackground= "cyan", command=win2 ) 
