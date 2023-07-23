@@ -11,6 +11,15 @@ title = tk.Tk()
 title.title("COVID CONTACT TRACING")
 title.geometry("670x670")
 
-start_btn = tk.Button (title, text = "Start", width=15, height=4, activebackground= "cyan" ) 
-start_btn.place (x=280, y=480)
+def win1():
+    def win2():
+        start_btn.destroy() 
+        btn1 = tk.Button (title, text = "Submit", width=8, height=2, activebackground= "cyan" ) 
+        btn1.place (x=300, y=620)
+    start_btn = tk.Button (title, text = "Start", width=15, height=4, activebackground= "cyan", command=win2 ) 
+    start_btn.place (x=280, y=480)
+
+win1()
 title.mainloop()
+
+
