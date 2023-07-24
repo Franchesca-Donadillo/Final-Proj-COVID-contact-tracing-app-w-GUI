@@ -108,10 +108,10 @@ def win1():
         chk_sym2.place(x=215,y=310)
 
         # transfer data to a text file
-        info.saved_txt(entry_name, entry_email, entry_birt, entry_age, entry_add)
+        info.saved_txt(entry_name, entry_email, entry_birt, entry_age, entry_add, chk_vax1, chk_vax2, chk_con1, chk_con2, chk_sym1, chk_sym2)
 
         # submit button to save infos
-        btn1 = tk.Button (title, text = "Submit", width=8, height=2, activebackground= "cyan", command=lambda: [info.saved_txt(entry_name, entry_email, entry_birt, entry_age, entry_add), win3()])
+        btn1 = tk.Button (title, text = "Submit", width=8, height=2, activebackground= "cyan", command=lambda: [info.saved_txt(entry_name, entry_email, entry_birt, entry_age, entry_add, chk_vax1, chk_vax2, chk_con1, chk_con2, chk_sym1, chk_sym2), win3()])
         btn1.place (x=210, y=450)
         
     # start button
