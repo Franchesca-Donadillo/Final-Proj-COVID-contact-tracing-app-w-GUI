@@ -4,8 +4,11 @@
 # import tkinter
 import tkinter as tk
 from _tkinter import *
+#from close_win import Destroy
 
 title = tk.Tk()
+#des = Destroy()
+
 
 # create main window
 title.title("COVID CONTACT TRACING")
@@ -17,14 +20,36 @@ title.create_image(0,0, image= background)
 
 def win1():
     def win2():
+        def win3():
+            lbl_titl.destroy()
+            btn1.destroy()
+            lbl_name.destroy()
+            lbl_name.destroy()
+            entry_name.destroy()
+            lbl_email.destroy()
+            entry_email.destroy()
+            lbl_birt.destroy()
+            entry_birt.destroy()
+            lbl_age.destroy()
+            entry_age.destroy()
+            lbl_add.destroy()
+            entry_add.destroy()
+            lbl_vax.destroy()
+            chk_vax1.destroy()
+            chk_vax2.destroy()
+            lbl_con.destroy()
+            chk_con1.destroy()
+            chk_con2.destroy()
+            lbl_sym.destroy()
+            chk_sym1.destroy()
+            chk_sym2.destroy()
+
         lbl_main.destroy()
         start_btn.destroy() 
-        btn1 = tk.Button (title, text = "Submit", width=8, height=2, activebackground= "cyan") 
-        btn1.place (x=210, y=450)
         
         # title
-        lbl_name = tk.Label (title, text = "CONTACT INFORMATION", font="arial", bg="white", foreground="black")
-        lbl_name.place(x=125, y=5)
+        lbl_titl = tk.Label (title, text = "CONTACT INFORMATION", font="arial", bg="white", foreground="black")
+        lbl_titl.place(x=125, y=5)
 
         # name info
         lbl_name = tk.Label (title, text = "Name", bg="white")
@@ -67,22 +92,41 @@ def win1():
         # close contact
         lbl_con = tk.Label (title, text = "Have you had exposure to a probable or confirmed case in the last 14 days?", bg="white")
         lbl_con.place(x=10, y=240)
-        chk_con = tk.Checkbutton(title, text="Yes", activebackground="green", bg="white")
-        chk_con.place(x=170,y=260)
-        chk_con = tk.Checkbutton(title, text="No", activebackground="green", bg="white")
-        chk_con.place(x=215,y=260)
+        chk_con1 = tk.Checkbutton(title, text="Yes", activebackground="green", bg="white")
+        chk_con1.place(x=170,y=260)
+        chk_con2 = tk.Checkbutton(title, text="No", activebackground="green", bg="white")
+        chk_con2.place(x=215,y=260)
 
         # experience symptoms
         lbl_sym = tk.Label (title, text = "Are you experiencing any COVID-19 symptoms in the past 7 days?", bg="white")
         lbl_sym.place(x=10, y=290)
-        chk_sym = tk.Checkbutton(title, text="Yes", activebackground="green", bg="white")
-        chk_sym.place(x=170,y=310)
-        chk_sym = tk.Checkbutton(title, text="No", activebackground="green", bg="white")
-        chk_sym.place(x=215,y=310)
-    
+        chk_sym1 = tk.Checkbutton(title, text="Yes", activebackground="green", bg="white")
+        chk_sym1.place(x=170,y=310)
+        chk_sym2 = tk.Checkbutton(title, text="No", activebackground="green", bg="white")
+        chk_sym2.place(x=215,y=310)
+        
+        def saved_txt():
+            with open("contact_infos.txt", "w") as saved_file:
+                saved_file.write(entry_name.get())
+                saved_file.write(entry_email.get())
+                saved_file.write(entry_birt.get())
+                saved_file.write(entry_age.get())
+                saved_file.write(entry_add.get())
+                #saved_file.write(chk_vax1.selection_own_get)
+                # saved_file.write(chk_vax2.selection_get())
+                # saved_file.write(chk_vax2.selection_get())
+                # saved_file.write(chk_con1.selection_get())
+                # saved_file.write(chk_con2.selection_get())
+                # saved_file.write(chk_sym1.selection_get())
+                # saved_file.write(chk_sym2.selection_get())
+            return saved_txt
+        
+        btn1 = tk.Button (title, text = "Submit", width=8, height=2, activebackground= "cyan", command=saved_txt) 
+        btn1.place (x=210, y=450)
+
     lbl_main= tk.Label (title, text = "COVID CONTACT TRACING APP", bg="white", foreground="blue", font="helvetica")
     lbl_main.place(x=100, y=250)
-    start_btn = tk.Button (title, text = "Start", width=15, height=4, activebackground= "cyan", command=win2 ) 
+    start_btn = tk.Button (title, text = "Start", width=15, height=4, activebackground= "cyan", command=win2, padx=10 ) 
     start_btn.place (x=188, y=310)
 
 win1()
