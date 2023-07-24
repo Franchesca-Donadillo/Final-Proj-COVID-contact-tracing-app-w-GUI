@@ -4,9 +4,11 @@
 # import tkinter
 import tkinter as tk
 from _tkinter import *
+from input_file import SaveInfo
 #from close_win import Destroy
 
 title = tk.Tk()
+info = SaveInfo()
 #des = Destroy()
 
 
@@ -104,26 +106,15 @@ def win1():
         chk_sym1.place(x=170,y=310)
         chk_sym2 = tk.Checkbutton(title, text="No", activebackground="green", bg="white")
         chk_sym2.place(x=215,y=310)
-        
-        def saved_txt():
-            with open("contact_infos.txt", "w") as saved_file:
-                saved_file.write(entry_name.get())
-                saved_file.write(entry_email.get())
-                saved_file.write(entry_birt.get())
-                saved_file.write(entry_age.get())
-                saved_file.write(entry_add.get())
-                #saved_file.write(chk_vax1.selection_own_get)
-                # saved_file.write(chk_vax2.selection_get())
-                # saved_file.write(chk_vax2.selection_get())
-                # saved_file.write(chk_con1.selection_get())
-                # saved_file.write(chk_con2.selection_get())
-                # saved_file.write(chk_sym1.selection_get())
-                # saved_file.write(chk_sym2.selection_get())
-            return saved_txt
-        
-        btn1 = tk.Button (title, text = "Submit", width=8, height=2, activebackground= "cyan", command=saved_txt) 
-        btn1.place (x=210, y=450)
 
+        # transfer data to a text file
+        info.saved_txt(entry_name, entry_email, entry_birt, entry_age, entry_add)
+
+        # submit button to save infos
+        btn1 = tk.Button (title, text = "Submit", width=8, height=2, activebackground= "cyan", command=lambda: [info.saved_txt(entry_name, entry_email, entry_birt, entry_age, entry_add), win3()])
+        btn1.place (x=210, y=450)
+        
+    # start button
     lbl_main= tk.Label (title, text = "COVID CONTACT TRACING APP", bg="white", foreground="blue", font="helvetica")
     lbl_main.place(x=100, y=250)
     start_btn = tk.Button (title, text = "Start", width=15, height=4, activebackground= "cyan", command=win2, padx=10 ) 
