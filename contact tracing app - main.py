@@ -11,6 +11,9 @@ title = tk.Tk()
 info = SaveInfo()
 #des = Destroy()
 
+var1 = tk.IntVar()
+var2 = tk.IntVar()
+var3 = tk.IntVar()
 
 # create main window
 title.title("COVID CONTACT TRACING")
@@ -86,7 +89,7 @@ def win1():
         # vaccination
         lbl_vax = tk.Label (title, text = "Have you been vaccinated?", bg="white")
         lbl_vax.place(x=10, y=205)
-        chk_vax1 = tk.Checkbutton(title, text="Yes", activebackground="green", bg="white")
+        chk_vax1 = tk.Checkbutton(title, text="Yes", activebackground="green", bg="white",variable=var1.get(), onvalue=1, offvalue=0, )
         chk_vax1.place(x=170,y=205)
         chk_vax2 = tk.Checkbutton(title, text="No", activebackground="green", bg="white")
         chk_vax2.place(x=215,y=205)
