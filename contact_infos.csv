@@ -4,5 +4,11 @@ Birthday: 08/16/2000
 Age: 22
 Address: Japan
 Have you been vaccinated?: 
-Yes: .!canvas.!checkbutton
-.!canvas.!checkbutton2.!canvas.!checkbutton3.!canvas.!checkbutton4.!canvas.!checkbutton5.!canvas.!checkbutton6
+	Yes: 1
+	No:  0
+Have you had exposure to a probable or confirmed case in the last 14 days? 
+	Yes: 0
+	No:  0
+Are you experiencing any COVID-19 symptoms in the past 7 days?
+	Yes: 0
+	No:  0

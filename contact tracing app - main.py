@@ -11,9 +11,12 @@ title = tk.Tk()
 info = SaveInfo()
 #des = Destroy()
 
-var1 = tk.IntVar()
-var2 = tk.IntVar()
-var3 = tk.IntVar()
+vax1_val = tk.IntVar()
+vax2_val = tk.IntVar()
+con1_val = tk.IntVar()
+con2_val = tk.IntVar()
+sym1_val = tk.IntVar()
+sym2_val = tk.IntVar()
 
 # create main window
 title.title("COVID CONTACT TRACING")
@@ -87,9 +90,10 @@ def win1():
         entry_add.place(x=70,y=175)
 
         # vaccination
+       
         lbl_vax = tk.Label (title, text = "Have you been vaccinated?", bg="white")
         lbl_vax.place(x=10, y=205)
-        chk_vax1 = tk.Checkbutton(title, text="Yes", activebackground="green", bg="white",variable=var1.get(), onvalue=1, offvalue=0, )
+        chk_vax1 = tk.Checkbutton(title, text="Yes", activebackground="green", bg="white",variable=vax1_val)
         chk_vax1.place(x=170,y=205)
         chk_vax2 = tk.Checkbutton(title, text="No", activebackground="green", bg="white")
         chk_vax2.place(x=215,y=205)
@@ -111,10 +115,10 @@ def win1():
         chk_sym2.place(x=215,y=310)
 
         # transfer data to a text file
-        info.saved_txt(entry_name, entry_email, entry_birt, entry_age, entry_add, chk_vax1, chk_vax2, chk_con1, chk_con2, chk_sym1, chk_sym2)
+        info.saved_txt(entry_name, entry_email, entry_birt, entry_age, entry_add, vax1_val, vax2_val, con1_val, con2_val, sym1_val, sym2_val)
 
         # submit button to save infos
-        btn1 = tk.Button (title, text = "Submit", width=8, height=2, activebackground= "cyan", command=lambda: [info.saved_txt(entry_name, entry_email, entry_birt, entry_age, entry_add, chk_vax1, chk_vax2, chk_con1, chk_con2, chk_sym1, chk_sym2), win3()])
+        btn1 = tk.Button (title, text = "Submit", width=8, height=2, activebackground= "cyan", command=lambda: [info.saved_txt(entry_name, entry_email, entry_birt, entry_age, entry_add, vax1_val, vax2_val, con1_val, con2_val, sym1_val, sym2_val), win3()])
         btn1.place (x=210, y=450)
         
     # start button
