@@ -5,10 +5,12 @@
 import tkinter as tk
 from _tkinter import *
 from input_file import SaveInfo
+from window import Window
 #from close_win import Destroy
 
 title = tk.Tk()
 info = SaveInfo()
+win_des = Window()
 #des = Destroy()
 
 vax1_val = tk.IntVar()
@@ -29,31 +31,11 @@ title.create_image(0,0, image= background)
 def win1():
     def win2():
         def win3():
-            lbl_titl.destroy()
-            btn1.destroy()
-            lbl_name.destroy()
-            lbl_name.destroy()
-            entry_name.destroy()
-            lbl_email.destroy()
-            entry_email.destroy()
-            lbl_birt.destroy()
-            entry_birt.destroy()
-            lbl_age.destroy()
-            entry_age.destroy()
-            lbl_add.destroy()
-            entry_add.destroy()
-            lbl_vax.destroy()
-            chk_vax1.destroy()
-            chk_vax2.destroy()
-            lbl_con.destroy()
-            chk_con1.destroy()
-            chk_con2.destroy()
-            lbl_sym.destroy()
-            chk_sym1.destroy()
-            chk_sym2.destroy()
+            # destroy window 2
+            win_des.win2_des(lbl_titl, btn1, lbl_name, entry_name, lbl_email, entry_email, lbl_birt, entry_birt, lbl_age, entry_age, lbl_add, entry_add, lbl_vax, chk_vax1, chk_vax2, lbl_con, chk_con1, chk_con2, lbl_sym, chk_sym1, chk_sym2)
 
-        lbl_main.destroy()
-        start_btn.destroy() 
+        # destroy window 1
+        win_des.win1_des(lbl_main, start_btn)
         
         # title
         lbl_titl = tk.Label (title, text = "CONTACT INFORMATION", font="arial", bg="white", foreground="black")
