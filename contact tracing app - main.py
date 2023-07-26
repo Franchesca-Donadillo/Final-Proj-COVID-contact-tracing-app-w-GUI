@@ -4,6 +4,7 @@
 # import tkinter
 import tkinter as tk
 from _tkinter import *
+from PIL import Image, ImageTk
 
 # import functions
 from input_file import SaveInfo
@@ -28,6 +29,7 @@ title = tk.Canvas(title, width=500, height=500)
 title.pack()
 background = tk.PhotoImage(file="C:\\Users\\63920\\Downloads\\covid\\covid2.png")
 title.create_image(0,0, image= background)
+btn_img = ImageTk.PhotoImage(Image.open("C:\\Users\\63920\\Downloads\\covid\\search.png").resize((15,15)))
 
 def win1():
     def win2():
@@ -60,7 +62,7 @@ def win1():
             btn_quit.place (x=170, y=400)
 
         # destroy window 1
-        win_des.win1_des(lbl_main, start_btn)
+        win_des.win1_des(lbl_main, start_btn, entry_search, btn_search)
         
         # title
         lbl_titl = tk.Label (title, text = "CONTACT INFORMATION", font="arial", bg="white", foreground="black")
@@ -133,8 +135,8 @@ def win1():
     entry_search.place(x=50,y=20)
 
     # search button
-    # btn_search = tk.Button (title, text = "Submit", width=8, height=2, activebackground= "cyan", command=lambda: [info.saved_txt(entry_name, entry_email, entry_birt, entry_age, entry_add, vax1_val, vax2_val, con1_val, con2_val, sym1_val, sym2_val), win3()])
-    # btn_search.place (x=210, y=450)
+    btn_search = tk.Button (master=title, image=btn_img , width=15, height=15, activebackground= "cyan")
+    btn_search.place (x=425, y=18)
 
 
     # start button
