@@ -4,14 +4,16 @@
 # import tkinter
 import tkinter as tk
 from _tkinter import *
+
+# import functions
 from input_file import SaveInfo
 from window_des import Window
-#from close_win import Destroy
 
 title = tk.Tk()
 info = SaveInfo()
 win_des = Window()
 
+# assign int value to checkbox 
 vax1_val = tk.IntVar()
 vax2_val = tk.IntVar()
 con1_val = tk.IntVar()
@@ -31,8 +33,13 @@ def win1():
     def win2():
         def win3():
             def win4():
+                # def win5():
+                    
+                    
+                    # return win5
+
                 # destroy window 3
-                win_des.win3_des(lbl_rec, btn_rec)    
+                win_des.win3_des(lbl_rec, btn_rec, btn_quit)    
 
                 # call window 1 to return to first page
                 win1()
@@ -47,6 +54,10 @@ def win1():
             # Button to return to main menu
             btn_rec = tk.Button (title, text = "Return to Main Menu", width=20, height=3, activebackground= "cyan", command=win4)
             btn_rec.place (x=170, y=350)
+
+            # Butoon to quit
+            btn_quit = tk.Button (title, text = "Quit", width=20, height=3, activebackground= "cyan", command=title.quit)
+            btn_quit.place (x=170, y=400)
 
         # destroy window 1
         win_des.win1_des(lbl_main, start_btn)
@@ -116,12 +127,22 @@ def win1():
         # submit button to save infos
         btn1 = tk.Button (title, text = "Submit", width=8, height=2, activebackground= "cyan", command=lambda: [info.saved_txt(entry_name, entry_email, entry_birt, entry_age, entry_add, vax1_val, vax2_val, con1_val, con2_val, sym1_val, sym2_val), win3()])
         btn1.place (x=210, y=450)
-        
+
+    # search box
+    entry_search = tk.Entry (title, width="60")
+    entry_search.place(x=50,y=20)
+
+    # search button
+    # btn_search = tk.Button (title, text = "Submit", width=8, height=2, activebackground= "cyan", command=lambda: [info.saved_txt(entry_name, entry_email, entry_birt, entry_age, entry_add, vax1_val, vax2_val, con1_val, con2_val, sym1_val, sym2_val), win3()])
+    # btn_search.place (x=210, y=450)
+
+
     # start button
     lbl_main= tk.Label (title, text = "COVID CONTACT TRACING APP", bg="white", foreground="blue", font="helvetica")
+    lbl_main.pack(padx=40, pady=40)
     lbl_main.place(x=100, y=250)
     start_btn = tk.Button (title, text = "Start", width=15, height=4, activebackground= "cyan", command=win2, padx=10 ) 
-    start_btn.place (x=188, y=310)
+    start_btn.place (x=180, y=310)
 
 win1()
 title.mainloop()
