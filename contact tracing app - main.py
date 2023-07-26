@@ -24,6 +24,7 @@ con1_val = tk.IntVar()
 con2_val = tk.IntVar()
 sym1_val = tk.IntVar()
 sym2_val = tk.IntVar()
+end = tk.END
 
 # create main window
 title.title("COVID CONTACT TRACING")
@@ -40,8 +41,6 @@ def win1():
             def win4():
                 def win5():
                     def win6():
-                        # destroy win 5
-
                         # call window 1 to return to first page
                         win1()
 
@@ -49,11 +48,12 @@ def win1():
                     data_list = tk.Listbox(title, width = 150)
                     data_list.pack(pady=50)
 
-                    entry_search.bind("<KeyRelease>")
+                    entry_search.bind("<KeyRelease>", lambda: srch_info.check(entry_search, data_list))
 
-                    srch_info.upd_info(data_list,info)
-                    srch_info.check(entry_search)
+                    info = srch_info.check(entry_search)
 
+                    srch_info.upd_info(data_list,info, end)
+                    
                     # Button to return to main menu
                     btn_rec = tk.Button (title, text = "Return to Main Menu", width=20, height=3, activebackground= "cyan", command=win6)
                     btn_rec.place (x=170, y=350)
