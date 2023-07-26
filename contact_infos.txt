@@ -1,15 +1,75 @@
-Name: 
-Email: 
-Birthday: 
-Age: 
-Address: 
-Have you been vaccinated?: 
-	Yes: 0
-	No:  0
-Have you had exposure to a probable or confirmed case in the last 14 days? 
-	Yes: 0
-	No:  0
-Are you experiencing any COVID-19 symptoms in the past 7 days?
-	Yes: 0
-	No:  0
+Name: epay	Email: epay@gmail.com	Birthday: 08/16/2000	Age: 22	Address: Japan	Vaccinated:	Yes: 1  No:  0	Exposure:	Yes: 0  No:  1
+COVID-19 symptoms:	Yes: 0  No:  1
+
+Name: 	Email: 	Birthday: 	Age: 	Address: 	Vaccinated:	Yes: 0  No:  0	Exposure:	Yes: 0  No:  0
+COVID-19 symptoms:	Yes: 0  No:  0
+
+Name: ashley	Email: ashley@gmail.com	Birthday: 08/19/2002	Age: 20	Address: South Korea	Vaccinated:	Yes: 1  No:  0	Exposure:	Yes: 0  No:  1
+COVID-19 symptoms:	Yes: 0  No:  1
+
+Name: 	Email: 	Birthday: 	Age: 	Address: 	Vaccinated:	Yes: 0  No:  0	Exposure:	Yes: 0  No:  0
+COVID-19 symptoms:	Yes: 0  No:  0
+
+Name: 	Email: 	Birthday: 	Age: 	Address: 	Vaccinated:	Yes: 0  No:  0	Exposure:	Yes: 0  No:  0
+COVID-19 symptoms:	Yes: 0  No:  0
+
+Name: 	Email: 	Birthday: 	Age: 	Address: 	Vaccinated:	Yes: 0  No:  0	Exposure:	Yes: 0  No:  0
+COVID-19 symptoms:	Yes: 0  No:  0
+
+Name: 	Email: 	Birthday: 	Age: 	Address: 	Vaccinated:	Yes: 0  No:  0	Exposure:	Yes: 0  No:  0
+COVID-19 symptoms:	Yes: 0  No:  0
+
+Name: 	Email: 	Birthday: 	Age: 	Address: 	Vaccinated:	Yes: 0  No:  0	Exposure:	Yes: 0  No:  0
+COVID-19 symptoms:	Yes: 0  No:  0
+
+Name: 	Email: 	Birthday: 	Age: 	Address: 	Vaccinated:	Yes: 0  No:  0	Exposure:	Yes: 0  No:  0
+COVID-19 symptoms:	Yes: 0  No:  0
+
+Name: 	Email: 	Birthday: 	Age: 	Address: 	Vaccinated:	Yes: 0  No:  0	Exposure:	Yes: 0  No:  0
+COVID-19 symptoms:	Yes: 0  No:  0
+
+Name: 	Email: 	Birthday: 	Age: 	Address: 	Vaccinated:	Yes: 0  No:  0	Exposure:	Yes: 0  No:  0
+COVID-19 symptoms:	Yes: 0  No:  0
+
+Name: 	Email: 	Birthday: 	Age: 	Address: 	Vaccinated:	Yes: 0  No:  0	Exposure:	Yes: 0  No:  0
+COVID-19 symptoms:	Yes: 0  No:  0
+
+Name: 	Email: 	Birthday: 	Age: 	Address: 	Vaccinated:	Yes: 0  No:  0	Exposure:	Yes: 0  No:  0
+COVID-19 symptoms:	Yes: 0  No:  0
+
+Name: 	Email: 	Birthday: 	Age: 	Address: 	Vaccinated:	Yes: 0  No:  0	Exposure:	Yes: 0  No:  0
+COVID-19 symptoms:	Yes: 0  No:  0
+
+Name: 	Email: 	Birthday: 	Age: 	Address: 	Vaccinated:	Yes: 0  No:  0	Exposure:	Yes: 0  No:  0
+COVID-19 symptoms:	Yes: 0  No:  0
+
+Name: 	Email: 	Birthday: 	Age: 	Address: 	Vaccinated:	Yes: 0  No:  0	Exposure:	Yes: 0  No:  0
+COVID-19 symptoms:	Yes: 0  No:  0
+
+Name: 	Email: 	Birthday: 	Age: 	Address: 	Vaccinated:	Yes: 0  No:  0	Exposure:	Yes: 0  No:  0
+COVID-19 symptoms:	Yes: 0  No:  0
+
+Name: 	Email: 	Birthday: 	Age: 	Address: 	Vaccinated:	Yes: 0  No:  0	Exposure:	Yes: 0  No:  0
+COVID-19 symptoms:	Yes: 0  No:  0
+
+Name: 	Email: 	Birthday: 	Age: 	Address: 	Vaccinated:	Yes: 0  No:  0	Exposure:	Yes: 0  No:  0
+COVID-19 symptoms:	Yes: 0  No:  0
+
+Name: 	Email: 	Birthday: 	Age: 	Address: 	Vaccinated:	Yes: 0  No:  0	Exposure:	Yes: 0  No:  0
+COVID-19 symptoms:	Yes: 0  No:  0
+
+Name: 	Email: 	Birthday: 	Age: 	Address: 	Vaccinated:	Yes: 0  No:  0	Exposure:	Yes: 0  No:  0
+COVID-19 symptoms:	Yes: 0  No:  0
+
+Name: 	Email: 	Birthday: 	Age: 	Address: 	Vaccinated:	Yes: 0  No:  0	Exposure:	Yes: 0  No:  0
+COVID-19 symptoms:	Yes: 0  No:  0
+
+Name: 	Email: 	Birthday: 	Age: 	Address: 	Vaccinated:	Yes: 0  No:  0	Exposure:	Yes: 0  No:  0
+COVID-19 symptoms:	Yes: 0  No:  0
+
+Name: 	Email: 	Birthday: 	Age: 	Address: 	Vaccinated:	Yes: 0  No:  0	Exposure:	Yes: 0  No:  0
+COVID-19 symptoms:	Yes: 0  No:  0
+
+Name: ashley	Email: ashley@gmail.com	Birthday: 08/16/2000	Age: 22	Address: Japan	Vaccinated:	Yes: 1  No:  0	Exposure:	Yes: 0  No:  1
+COVID-19 symptoms:	Yes: 0  No:  1
 

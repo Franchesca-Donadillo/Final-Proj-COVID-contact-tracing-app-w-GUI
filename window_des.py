@@ -1,10 +1,8 @@
 class Window:
-    def win1_des(self, lbl_main, start_btn, entry_search,  btn_search):
+    def win1_des(self, lbl_main, start_btn):
         lbl_main.destroy()
         start_btn.destroy()
-        entry_search.destroy()
-        btn_search.destroy()
-
+        
     def win2_des(self, lbl_titl, btn1, lbl_name, entry_name, lbl_email, entry_email, lbl_birt, entry_birt, lbl_age, entry_age, lbl_add, entry_add, lbl_vax, chk_vax1, chk_vax2, lbl_con, chk_con1, chk_con2, lbl_sym, chk_sym1, chk_sym2):
             lbl_titl.destroy()
             btn1.destroy()
@@ -32,3 +30,7 @@ class Window:
         lbl_rec.destroy()
         btn_rec.destroy()
         btn_quit.destroy()
+
+    def win4_des(self, entry_search, btn_search):
+        entry_search.destroy()
+        btn_search.destroy()
