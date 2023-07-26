@@ -25,3 +25,7 @@ class Window:
             lbl_sym.destroy()
             chk_sym1.destroy()
             chk_sym2.destroy()
+
+    def win3_des(self, lbl_rec, btn_rec):
+        lbl_rec.destroy()
+        btn_rec.destroy()

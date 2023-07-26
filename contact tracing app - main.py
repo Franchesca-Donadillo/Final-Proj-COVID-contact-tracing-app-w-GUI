@@ -5,13 +5,12 @@
 import tkinter as tk
 from _tkinter import *
 from input_file import SaveInfo
-from window import Window
+from window_des import Window
 #from close_win import Destroy
 
 title = tk.Tk()
 info = SaveInfo()
 win_des = Window()
-#des = Destroy()
 
 vax1_val = tk.IntVar()
 vax2_val = tk.IntVar()
@@ -31,8 +30,23 @@ title.create_image(0,0, image= background)
 def win1():
     def win2():
         def win3():
+            def win4():
+                # destroy window 3
+                win_des.win3_des(lbl_rec, btn_rec)    
+
+                # call window 1 to return to first page
+                win1()
+                
             # destroy window 2
             win_des.win2_des(lbl_titl, btn1, lbl_name, entry_name, lbl_email, entry_email, lbl_birt, entry_birt, lbl_age, entry_age, lbl_add, entry_add, lbl_vax, chk_vax1, chk_vax2, lbl_con, chk_con1, chk_con2, lbl_sym, chk_sym1, chk_sym2)
+            
+            # Recorded message to user
+            lbl_rec = tk.Label (title, text = "RESPONSE HAS BEEN RECORDED", font="arial", bg="white", foreground="black")
+            lbl_rec.place(x=95, y=55)
+
+            # Button to return to main menu
+            btn_rec = tk.Button (title, text = "Return to Main Menu", width=20, height=3, activebackground= "cyan", command=win4)
+            btn_rec.place (x=170, y=350)
 
         # destroy window 1
         win_des.win1_des(lbl_main, start_btn)

@@ -1,6 +1,6 @@
 class SaveInfo:
     def saved_txt(self, entry_name, entry_email, entry_birt, entry_age, entry_add, vax1_val, vax2_val, con1_val, con2_val, sym1_val, sym2_val):
-        with open("contact_infos.txt", "a+") as saved_file:
+        with open("contact_infos.txt", "w") as saved_file:
             name = saved_file.write("Name: " + entry_name.get() + "\n")
             email = saved_file.write("Email: " + entry_email.get() + "\n")
             birt = saved_file.write("Birthday: " + entry_birt.get() + "\n")
