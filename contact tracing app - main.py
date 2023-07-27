@@ -87,6 +87,9 @@ def win1():
             # destroy window 2
             win_des.win2_des(lbl_titl, btn1, lbl_surname, entry_surname, entry_first_name, lbl_first_name, entry_mid_name, lbl_mid_name, lbl_email, entry_email, lbl_birt, entry_birt, lbl_age, entry_age, lbl_add, entry_add, lbl_vax, chk_vax1, chk_vax2, lbl_con, chk_con1, chk_con2, lbl_sym, chk_sym1, chk_sym2)            
 
+            # reset checkboxes
+            win_des.win2_reset(vax1_val, vax2_val, con1_val, con2_val, sym1_val, sym2_val)
+
             # Recorded message to user
             lbl_rec = tk.Label (title, text = "RESPONSE HAS BEEN RECORDED", font="arial", bg="white", foreground="black")
             lbl_rec.place(x=95, y=105)
@@ -107,7 +110,7 @@ def win1():
         lbl_titl.place(x=125, y=5)
 
         # surname info
-        lbl_surname = tk.Label (title, text = "Surame", bg="white")
+        lbl_surname = tk.Label (title, text = "Surname", bg="white")
         lbl_surname.place(x=10, y=55)
         entry_surname = tk.Entry (title, width="60")
         entry_surname.place(x=100,y=55)
@@ -172,9 +175,6 @@ def win1():
         chk_sym1.place(x=170,y=355)
         chk_sym2 = tk.Checkbutton(title, text="No", activebackground="green", bg="white", variable=sym2_val)
         chk_sym2.place(x=215,y=355)
-
-        # transfer data to a text file
-        info.saved_txt(entry_surname,entry_first_name,entry_mid_name, entry_email, entry_birt, entry_age, entry_add, vax1_val, vax2_val, con1_val, con2_val, sym1_val, sym2_val)
 
         # submit button to save infos
         btn1 = tk.Button (title, text = "Submit", width=8, height=2, activebackground= "cyan", command=lambda: [info.saved_txt(entry_surname, entry_first_name, entry_mid_name, entry_email, entry_birt, entry_age, entry_add, vax1_val, vax2_val, con1_val, con2_val, sym1_val, sym2_val), win3()])

@@ -12,7 +12,7 @@ class Search:
             # get user entry
             entered = entry_search.get()
                 
-            if entered == " ":
+            if not entered.strip():
                 info = information
 
             else:
@@ -26,19 +26,18 @@ class Search:
                         info.append("Email: " + splt_info[9])
                         info.append("Birthday: " + splt_info[11])
                         info.append("Age: " + splt_info[13])
-                        info.append("Address: " + splt_info[15] + splt_info[16])
+                        info.append("Address: " + splt_info[15])
                         info.append("Vaccinated: ")
-                        info.append(splt_info[18] + splt_info[19])
-                        info.append(splt_info[20] + splt_info[21])
+                        info.append(splt_info[17] + splt_info[18])
+                        info.append(splt_info[19] + splt_info[20])
                         info.append("Had exposure: ")
-                        info.append(splt_info[23] + splt_info[24])
-                        info.append(splt_info[25] + splt_info[26]) 
+                        info.append(splt_info[22] + splt_info[23])
+                        info.append(splt_info[24] + splt_info[25]) 
                         info.append("Has COVID-19 symptoms: ")
-                        info.append(splt_info[29] + splt_info[30])
-                        info.append(splt_info[31] + splt_info[32])
-                    
-                    elif entered != information:
-                        info.append("No Results Found")
+                        info.append(splt_info[28] + splt_info[29])
+                        info.append(splt_info[30] + splt_info[31])
 
-
+                if not info:
+                    info.append("No Results Found") 
+                                                    
             return info

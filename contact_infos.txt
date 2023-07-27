@@ -1,1 +1,2 @@
-Surname: Cruz	First Name: Ethan	Middle Name: Batumbakal	Email: ethan@gmail.com	Birthday: 08/09/2000	Age: 22	Address: Manila, Philippines	Vaccinated:	Yes: 1  No:  0	Exposure:	Yes: 0  No:  1	COVID-19 symptoms:	Yes: 0  No:  1
+Surname: ethan	First Name: ndu	Middle Name: u	Email: iuc	Birthday: bubf	Age: ubuf	Address: h	Vaccinated:	Yes: 1  No:  0	Exposure:	Yes: 0  No:  1	COVID-19 symptoms:	Yes: 0  No:  1
+

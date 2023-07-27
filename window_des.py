@@ -30,6 +30,15 @@ class Window:
             chk_sym1.destroy()
             chk_sym2.destroy()
 
+    def win2_reset(self, vax1_val, vax2_val, con1_val, con2_val, sym1_val, sym2_val):
+        vax1_val.set(0)
+        vax2_val.set(0)
+        con1_val.set(0)
+        con2_val.set(0)
+        sym1_val.set(0)
+        sym2_val.set(0)
+         
+
     def win3_des(self, lbl_rec, btn_rec, btn_quit):
         lbl_rec.destroy()
         btn_rec.destroy()
