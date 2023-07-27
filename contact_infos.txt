@@ -1,1 +1,1 @@
-Surname: Batumbakal	First Name: Ethan	Middle Name: Cruz	Email: ethanbatumbakal@gmail.com	Birthday: 12/31/2000	Age: 22	Address: Seoul, S.Korea	Vaccinated:	Yes: 1  No:  0	Exposure:	Yes: 0  No:  1	COVID-19 symptoms:	Yes: 0  No:  1
+Surname: Cruz	First Name: Ethan	Middle Name: Batumbakal	Email: ethan@gmail.com	Birthday: 08/09/2000	Age: 22	Address: Manila, Philippines	Vaccinated:	Yes: 1  No:  0	Exposure:	Yes: 0  No:  1	COVID-19 symptoms:	Yes: 0  No:  1

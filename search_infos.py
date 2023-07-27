@@ -35,6 +35,10 @@ class Search:
                         info.append(splt_info[25] + splt_info[26]) 
                         info.append("Has COVID-19 symptoms: ")
                         info.append(splt_info[29] + splt_info[30])
-                        info.append(splt_info[31] + splt_info[32])          
-                                         
+                        info.append(splt_info[31] + splt_info[32])
+                    
+                    elif entered != information:
+                        info.append("No Results Found")
+
+
             return info
