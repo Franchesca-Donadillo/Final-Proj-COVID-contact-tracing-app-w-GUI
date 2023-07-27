@@ -41,22 +41,26 @@ def win1():
             def win4():
                 def win5():
                     def win6():
+                        # destroy window 5
+                        win_des.win5_des(data_list, entry_search, btn_search, btn_rec)
+
                         # call window 1 to return to first page
                         win1()
-
-                    # srch_info.searching(shown_text,  entry_search)
-                    data_list = tk.Listbox(title, width = 150)
-                    data_list.pack(pady=50)
+                    
+                    # list box for the searched data 
+                    data_list = tk.Listbox(title, width = 80, height=180) 
+                    data_list.pack(pady=50, padx=50)
+                    
 
                     entry_search.bind("<KeyRelease>", lambda: srch_info.check(entry_search, data_list))
 
-                    info = srch_info.check(entry_search)
+                    info = srch_info.check(entry_search,end)
 
-                    srch_info.upd_info(data_list,info, end)
+                    srch_info.upd_info(data_list,info)
                     
                     # Button to return to main menu
-                    btn_rec = tk.Button (title, text = "Return to Main Menu", width=20, height=3, activebackground= "cyan", command=win6)
-                    btn_rec.place (x=170, y=350)
+                    btn_rec = tk.Button (title, text = "Return to Main Menu", width=20, height=2, activebackground= "cyan", command=win6)
+                    btn_rec.place (x=170, y=430)
 
                 # destroy window 3
                 win_des.win3_des(lbl_rec, btn_rec, btn_quit) 
@@ -94,31 +98,31 @@ def win1():
         # name info
         lbl_name = tk.Label (title, text = "Name", bg="white")
         lbl_name.place(x=10, y=55)
-        entry_name = tk.Entry (title, width="30")
+        entry_name = tk.Entry (title, width="60")
         entry_name.place(x=70,y=55)
         
         # email info
         lbl_email = tk.Label (title, text = "Email", bg="white")
         lbl_email.place(x=10, y=85)
-        entry_email = tk.Entry (title, width="30")
+        entry_email = tk.Entry (title, width="60")
         entry_email.place(x=70,y=85)
 
         # birthday info
         lbl_birt = tk.Label (title, text = "Birthday", bg="white")
         lbl_birt.place(x=10, y=115)
-        entry_birt = tk.Entry (title, width="30")
+        entry_birt = tk.Entry (title, width="60")
         entry_birt.place(x=70,y=115)
         
         # age info
         lbl_age = tk.Label (title, text = "Age", bg="white")
         lbl_age.place(x=10, y=145)
-        entry_age = tk.Entry (title, width="30")
+        entry_age = tk.Entry (title, width="60")
         entry_age.place(x=70,y=145)
 
         # address info
         lbl_add = tk.Label (title, text = "Address", bg="white")
         lbl_add.place(x=10, y=175)
-        entry_add = tk.Entry (title, width="30")
+        entry_add = tk.Entry (title, width="60")
         entry_add.place(x=70,y=175)
 
         # vaccination

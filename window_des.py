@@ -34,3 +34,9 @@ class Window:
     def win4_des(self, entry_search, btn_search):
         entry_search.destroy()
         btn_search.destroy()
+
+    def win5_des(self, data_list, entry_search, btn_rec, btn_search):
+        data_list.destroy()
+        entry_search.destroy()
+        btn_rec.destroy()
+        btn_search.destroy()
