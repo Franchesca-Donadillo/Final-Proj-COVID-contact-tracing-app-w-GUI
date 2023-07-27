@@ -3,11 +3,15 @@ class Window:
         lbl_main.destroy()
         start_btn.destroy()
         
-    def win2_des(self, lbl_titl, btn1, lbl_name, entry_name, lbl_email, entry_email, lbl_birt, entry_birt, lbl_age, entry_age, lbl_add, entry_add, lbl_vax, chk_vax1, chk_vax2, lbl_con, chk_con1, chk_con2, lbl_sym, chk_sym1, chk_sym2):
+    def win2_des(self, lbl_titl, btn1, lbl_surname, entry_surname, entry_first_name, lbl_first_name, entry_mid_name, lbl_mid_name, lbl_email, entry_email, lbl_birt, entry_birt, lbl_age, entry_age, lbl_add, entry_add, lbl_vax, chk_vax1, chk_vax2, lbl_con, chk_con1, chk_con2, lbl_sym, chk_sym1, chk_sym2):
             lbl_titl.destroy()
             btn1.destroy()
-            lbl_name.destroy()
-            entry_name.destroy()
+            lbl_surname.destroy()
+            entry_surname.destroy()
+            lbl_first_name.destroy()
+            entry_first_name.destroy()
+            lbl_mid_name.destroy()
+            entry_mid_name.destroy()
             lbl_email.destroy()
             entry_email.destroy()
             lbl_birt.destroy()
@@ -35,8 +39,9 @@ class Window:
         entry_search.destroy()
         btn_search.destroy()
 
-    def win5_des(self, data_list, entry_search, btn_rec, btn_search):
+    def win5_des(self, data_list, entry_search, btn_rec, btn_search, btn_quit1):
         data_list.destroy()
         entry_search.destroy()
         btn_rec.destroy()
         btn_search.destroy()
+        btn_quit1.destroy()

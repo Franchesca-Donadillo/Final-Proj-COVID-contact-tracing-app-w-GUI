@@ -1,12 +1,1 @@
-Name: 	Email: 	Birthday: 	Age: 	Address: 	Vaccinated:	Yes: 0  No:  0	Exposure:	Yes: 0  No:  0
-COVID-19 symptoms:	Yes: 0  No:  0
-
-Name: 	Email: 	Birthday: 	Age: 	Address: 	Vaccinated:	Yes: 0  No:  0	Exposure:	Yes: 0  No:  0
-COVID-19 symptoms:	Yes: 0  No:  0
-
-Name: 	Email: 	Birthday: 	Age: 	Address: 	Vaccinated:	Yes: 0  No:  0	Exposure:	Yes: 0  No:  0
-COVID-19 symptoms:	Yes: 0  No:  0
-
-Name: ashley 	Email: ashley@gmail.com	Birthday: 08/16/2000	Age: 22	Address: Japan	Vaccinated:	Yes: 1  No:  0	Exposure:	Yes: 0  No:  1
-COVID-19 symptoms:	Yes: 0  No:  1
-
+Surname: Batumbakal	First Name: Ethan	Middle Name: Cruz	Email: ethanbatumbakal@gmail.com	Birthday: 12/31/2000	Age: 22	Address: Seoul, S.Korea	Vaccinated:	Yes: 1  No:  0	Exposure:	Yes: 0  No:  1	COVID-19 symptoms:	Yes: 0  No:  1
